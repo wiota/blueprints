@@ -16,7 +16,7 @@ All endpoints are prefixed with `/api/v1/`.
   * [`PUT /<vertex_type>/<id>`](#update-a-specific-vertex)
   * [`DELETE /<vertex_type>/<id>`](#delete-a-vertex)
   * [`GET /<vertex_type>/form/`](#get-vertex-form)
-  * [`PUT /<vertex_type>/<id>/succset/`](##put-vertex-succset)
+  * [`PUT /<vertex_type>/<id>/succset/`](#put-vertex-succset)
 * [Edge](#edge)
   * [`POST /edge/`](#create-edge)
   * [`DELETE /edge/`](#delete-edge)
@@ -295,6 +295,11 @@ GET /vertex/form/
 }
 ```
 
+### Put vertex succset
+* **Description:** Explicitly sets the succset of a vertex to the payload. Does not update the predset.
+* **Definition:** `PUT /<vertex_type>/<id>/succset/`
+* **Deprecated:** Use [`POST /edge/`](#create-edge) instead.
+
 ## Edge
 ### Create edge
 * **Description:** Creates a new edge.
@@ -344,8 +349,3 @@ DELETE /edge/
 * **Description:** Supposed to get the the current user. Actually returns the host for some reason.
 * **Definition:** `GET /user/`
 * **Deprecated:** Use [`GET /host/`](#get-host) instead.
-
-## Put vertex succset
-* **Description:** Explicitly sets the succset of a vertex to the payload. Does not update the predset.
-* **Definition:** `PUT /<vertex_type>/<id>/succset/`
-* **Deprecated:** Use [`POST /edge/`](#create-edge) instead.
