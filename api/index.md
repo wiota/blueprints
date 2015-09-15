@@ -16,6 +16,7 @@ All endpoints are prefixed with `/api/v1/`.
   * [`PUT /<vertex_type>/<id>`](#update-a-specific-vertex)
   * [`DELETE /<vertex_type>/<id>`](#delete-a-vertex)
   * [`GET /<vertex_type>/form/`](#get-vertex-form)
+  * [`PUT /<vertex_type>/<id>/succset/`](##put-vertex-succset)
 * [Edge](#edge)
   * [`POST /edge/`](#create-edge)
   * [`DELETE /edge/`](#delete-edge)
@@ -23,7 +24,6 @@ All endpoints are prefixed with `/api/v1/`.
   * ~~[`GET /photo/`](#get-photo)~~
   * ~~[`GET /audio/`](#get-audio)~~
   * ~~[`GET /user/`](#get-user)~~
-  * ~~[`PUT /<vertex_type>/<id>/succset/`](##put-vertex-succset)~~
 
 ## Body
 ### Get the body
